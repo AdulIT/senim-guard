@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+		<header class="header base-flex">
+		<div class="header-logo">
+			<img class="header-logo__img" src="./icons/logo/senim-logo.svg" alt="senim guard logo" loading="lazy">
+			<p class="header-logo__text text">SENIM GUARD</p>
+		</div>
+		<nav class="nav">
+			<ul class="menu base-flex">
+				<li class="menu__item">
+					<a href="./index.html" class="menu__link text active">
+						Главная
+					</a>
+					<img class="arrow-down menu__arrow-down" src="./icons/arrow-down.svg" alt="arrow down icon" loading="lazy">
+				</li>
+				<ul class="dropdown gradient-border">
+					<li class="dropdown__item"><a href="#about" class="dropdown__link text">О нас</a></li>
+					<li class="dropdown__item"><a href="#" class="dropdown__link text">Наши клиенты</a></li>
+					<li class="dropdown__item"><a href="#" class="dropdown__link text">Сотрудники</a></li>
+				</ul>
+				<li class="menu__item"><a href="./services.html" class="menu__link text">Наши услуги</a></li>
+				<li class="menu__item"><a href="#" class="menu__link text">Контакты</a></li>
+			</ul>
+		</nav>
+		<button class="gradient-border header__btn text">
+			<p>Оставить заявку</p>
+		</button>
+	</header>
+
+	<main class="main">
+		<section class="first-screen">
+			<div class="wrapper gradient-border">
+				<h1 class="title title__48">Надежный партнер <br> в сфере безопасности</h1>
+
+				<ul class="first-screen__advantages base-flex">
+					<li class="first-screen__advantages-item title">
+						+4000
+						<span class="first-screen__advantages-item__text text">Сотрудников</span>
+					</li>
+					<li class="first-screen__advantages-item title">
+						+8
+						<span class="first-screen__advantages-item__text text">Лет опыта</span>
+					</li>
+					<li class="first-screen__advantages-item title">
+						+100
+						<span class="first-screen__advantages-item__text text">Экипажей ГБР</span>
+					</li>
+					<li class="first-screen__advantages-item title">
+						18
+						<span class="first-screen__advantages-item__text text">Областей РК</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="about" id="about">
+			<h2 class="title title__40 about__title">
+				БЕЗОПАСНОСТЬ <br> НАША СПЕЦИАЛИЗАЦИЯ
+			</h2>
+			<p class="about__text text">
+				Senim Guard (ранее Азия Коргау) является одной из крупных <br> и динамично развивающихся охранных компаний в Казахстане.
+
+				Senim Guard - это высококвалифицированный руководящий и испольнительный аппарат. Наши сотрудники - это сплоченная компания профессионалов, которых отличает высокая квалификация, опыт работы в спецслужбах <br> и правоохранительных органах.
+			</p>
+			
+			<span class="about-accordion text">
+				Узнать больше
+				<img src="./icons/arrow-down.svg" alt="arrow down icon" loading="lazy">
+			</span>
+		</section>
+
+		<section class="clients">
+			<p class="clients__promo text">SENIM GUARD СЕГОДНЯ И ЗАВТРА</p>
+
+			<h3 class="title title__40 clients__title">Наши клиенты</h3>
+
+			<div class="clients__slider">
+				<div class="clients__slider-slide">
+					<img src="./icons/clients/ktj.svg" alt="Казахстан Темиржолы логотип">
+					<img src="./icons/clients/kazahtelekom.svg" alt="Казахтелеком логотип">
+					<img src="./icons/clients/ica.svg" alt="Intergas Central Asia логотип">
+					<img src="./icons/clients/occ.svg" alt="Oil Construction Company логотип">
+					<img src="./icons/clients/kcell.svg" alt="Кселл логотип">
+					<img src="./icons/clients/tele2.svg" alt="Теле 2 логотип">
+					<img src="./icons/clients/efc.svg" alt="eagle fighting championship логотип">
+					<img src="./icons/clients/jusan.svg" alt="Жусан банк логотип">
+					<img src="./icons/clients/qaztemirtrans.svg" alt="Казтемиртранс логотип">
+				</div>
+			</div>
+		</section>
+	</main>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

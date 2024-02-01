@@ -1,0 +1,57 @@
+.services
+{
+    min-height: 1141px;
+    padding: 100px;
+    .grid-contaner
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 320px);
+        grid-template-rows: repeat(3, 362px);
+        grid-auto-rows: 362px;
+        gap: 40px;
+        &__item
+        {
+            &.gradient-border
+            {
+                padding: 24px;
+                border-radius: 30px;
+                border: 3px;
+                &::before
+                {
+                    margin: -3px;
+                }
+            }
+            &-header
+            {
+                display: flex;
+                justify-content: space-between;
+                &__icon
+                {
+                    max-width: 52px;
+                    max-height: 52px;
+                }
+                &__num
+                {
+                    width: 82px;
+                    height: 82px;
+                    padding: 27px 28px 26px 27px;
+                    border-radius: 50px;
+                    background: #2C2C2C;
+                    font-size: 2.4rem;
+                    text-align: center;
+                }
+            }
+            &-title
+            {
+                font-size: 3.2rem;
+                font-weight: 500;
+                margin: 30px 0 10px;
+            }
+            &-text
+            {
+                font-size: 1.6rem;
+                color: $second-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.header
+{
+    position: relative;
+    padding: 24px 100px;
+    border-top: 1px solid #272727;
+    border-bottom: 1px solid #272727;
+    &-logo
+    {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 100%;
+        &__text
+        {
+            font-size: 3.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            &::after
+            {
+                content: '';
+                position: absolute;
+                margin-left: 50px;
+                width: 1px;
+                height: 100%;
+                background-color: #272727;
+                top: 0;
+            }
+        }
+    }
+    &__btn
+    {
+        padding: 12px 20px 14px;
+        font-weight: 500;
+        line-height: 120%;
+    }
+    .menu
+    {
+        position: relative;
+        width: max(312px, 348px);
+        &__link
+        {
+            line-height: 120%;
+            &.active
+            {
+                color: $accent-color;
+            }
+        }
+    }
+
+    .dropdown
+    {
+        position: absolute;
+        display: none;
+        top: 34px;
+        left: -33px;
+        padding: 2px 20px 4px;
+        &__item
+        {
+            padding: 10px 0;
+            &:nth-child(2)
+            {
+                border-top: 1px solid #272727;
+                border-bottom: 1px solid #272727;
+            }
+        }
+        &__link
+        {
+            line-height: 120%;
+        }
+    }
+    .show { display: block; }
+}

@@ -1,0 +1,19 @@
+.about
+{
+    min-height: 846px;
+    padding: 235px 0 235px 100px;
+    background: url(./images/about-img.png) top right/contain no-repeat;
+    background-color: #1D1D1D;
+    &__text
+    {
+        width: max(572px);
+        color: $second-color;
+        margin: 34px 0;
+        white-space: pre-line;
+    }
+    &-accordion
+    {
+        color: $accent-color;
+        cursor: pointer;
+    }
+}
