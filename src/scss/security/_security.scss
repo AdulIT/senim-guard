@@ -44,6 +44,7 @@
             flex-direction: column;
             gap: 30px;
             // overflow: hidden;
+            transition: transform 0.7s ease-in-out;
         }
         &__slide
         {

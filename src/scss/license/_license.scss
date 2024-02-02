@@ -1,0 +1,26 @@
+.license
+{
+    padding: 100px 0;
+    text-align: center;
+    background-color: #1D1D1D;;
+    .title__64
+    {
+        margin-bottom: 15px;
+    }
+    &__subtitle
+    {
+        color: $accent-color;
+        margin-bottom: 46px;
+    }
+    &__images
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 46px;
+        &-img
+        {
+            max-width: 430px;
+        }
+    }
+}
