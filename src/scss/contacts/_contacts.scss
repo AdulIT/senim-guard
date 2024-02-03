@@ -1,0 +1,204 @@
+.contact
+{
+    padding: 100px 115px;
+    background: url(/public/images/services/overlay.png) center center/cover no-repeat;
+    &__wrapper
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title
+    {
+        line-height: 120% !important;
+        text-align: left !important;
+        letter-spacing: -2.56px;
+        margin-bottom: 0 !important;
+    }
+    &__text
+    {
+        font-size: 2.4rem !important;
+        color: $second-color;
+        line-height: 140% !important;
+    }
+    &__left
+    {
+        max-width: 509px;
+    }
+    &__form
+    {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &_wrapper
+        {
+            display: flex;
+            gap: 10px;
+            & .contact__form_input
+            {
+                width: 245px;
+            }
+        }
+        &_input_box
+        {
+            position: relative;
+        }
+        &_input
+        {
+            width: 500px;
+            padding: 20px 20px 22px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.20);
+            background: #1D1D1F;
+            color: #FFF;
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 120%;
+            &t:focus
+            {
+                outline: 1px solid #fff;
+            }
+        }
+        &_label
+        {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: $second-color;
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 120%;
+        }
+    }
+    &__img
+    {
+        flex-shrink: 1;
+    }
+    &__line
+    {
+        margin: 44px 0;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.20);
+    }
+    &__footer
+    {
+        display: flex;
+        gap: 44px;
+        align-items: center;
+        &_btn
+        {
+            padding: 15px 30px 17px;
+            border-radius: 11px;
+            text-align: center;
+            font-weight: 500 !important;
+            line-height: 120% !important;
+        }
+        span
+        {
+            text-decoration: none;
+        }
+        &_call
+        {
+            font-weight: 500 !important;
+            line-height: 120% !important;
+            text-decoration-line: underline;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1202px)
+{
+    .contact
+    {
+        padding: 100px 0 60px;
+        &__wrapper
+        {
+            gap: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+    .contact__wrapper
+    {
+        place-content: center;
+    }
+    .contact__img
+    {
+        display: none;
+    }
+    .contact__footer
+    {
+        align-items: center;
+        justify-content: center;
+    }
+    .contact
+    {
+        padding: 64px 0;
+        background-color: var(--heading-color);
+        color: #fff;
+    }
+    .contact__form
+    {
+        display: none;
+    }
+    .contact__title
+    {
+        width: 350px;
+        font-size: 4.4rem;
+        font-weight: 700;
+        letter-spacing: -1.76px;
+        margin-bottom: 44px;
+    }
+    .contact__text
+    {
+        width: 300px;
+        font-size: 1.8rem;
+        margin-bottom: 0;
+    }
+
+    .line
+    {
+        margin: 64px 0 44px;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    .contact__footer
+    {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 575px)
+{
+    .contact__footer
+    {
+        gap: 18px;
+    }
+    .contact__footer_btn__mobile
+    {
+        padding: 13px 20px !important;
+        border-radius: 100px !important;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 120%;
+    }
+    .contact__footer_call
+    {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 120%;
+    }
+}
+@media screen and (max-width: 410px)
+{
+    .contact__title
+    {
+        width: 320px;
+    }
+}

@@ -167,10 +167,10 @@
 
 				<div class="security-slider__btns">
 					<button class="gradient-border security-slider__btn slide-down">
-						<img src="./icons/security/down.svg" alt="down arrow icon">
+						<img src="./icons/security/up.svg" alt="down arrow icon">
 					</button>
 					<button class="gradient-border security-slider__btn slide-up">
-						<img src="./icons/security/up.svg" alt="up arrow icon">
+						<img src="./icons/security/down.svg" alt="up arrow icon">
 					</button>
 				</div>
 			</div>
@@ -319,11 +319,47 @@
 			<p class="text license__subtitle">на занятие охранной деятельностью</p>
 
 			<div class="license__images">
-				<img src="/public/images/license/license-1-2x.png" alt="license image 1" class="license__images-img">
-				<img src="/public/images/license/license-2-2x.png" alt="license image 2" class="license__images-img">
+				<img src="/images/license/license-1-2x.png" alt="license image 1" class="license__images-img" loading="lazy">
+				<img src="/images/license/license-2-2x.png" alt="license image 2" class="license__images-img" loading="lazy">
 			</div>
 		</section>
+
+		<section class="contact" id="contactus">
+			<div class="contact__wrapper">
+				<div class="contact__left">
+					<h3 class="title title__64 contact__title">Мы будем рады вам помочь.</h3>
+					<p class="text contact__text">
+						Оставьте заявку и наши операторы с вами свяжутся.
+					</p>
+
+					<form action="#" class="contact__form">
+						<div class="contact__form_wrapper">
+							<input class="contact__form_input" type="text" id="name" name="name" placeholder="Имя" />
+							<input class="contact__form_input" type="tel" id="tel" name="tel" placeholder="Номер телефона" />
+						</div>
+						<input class="contact__form_input" type="email" id="email" name="email" placeholder="Ваш Email" />
+						<textarea class="contact__form_input" id="message" name="message" placeholder="Введите сообщение (не обязательно)"></textarea>
+					</form>
+				</div>
+
+				<img class="contact__img" src="/public/images/call/senim-group.png" alt="contact-img" loading='lazy' />
+			</div>
+
+			<div class="contact__line"></div>
+
+			<div class="contact__footer">
+				<button class="text contact__footer_btn">Оставить заявку</button>
+				<span class="text contact__footer_call">
+					Или позвоните 
+					<a href="tel:+77017860800" class="text contact__footer_call"> +7 701 786 08 00 </a>
+				</span>
+			</div>
+        </section>
 	</main>
+
+	<footer class="footer">
+		
+	</footer>
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>

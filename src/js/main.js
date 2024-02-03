@@ -23,6 +23,7 @@ const securitySliderNavigationDown = document.querySelector('.slide-down')
 const slidesLength = securitySlides.length
 
 let activeSlideIndex = 0
+let gap = 30
 
 // console.log(securitySlides[5].clientHeight);
 
@@ -32,14 +33,15 @@ function changeSlide(direction)
     // let nextHeight = securitySlides[activeSlideIndex + 1].clientHeight;
     // securitySlider.style.maxHeight = `${height + nextHeight + 30}px`
     // console.log(securitySlider.clientHeight);
-    if (direction === 'up')
+    console.log(height);
+    if (direction === 'down')
     {
         activeSlideIndex++
         if (activeSlideIndex > slidesLength - 1)
         {
             activeSlideIndex = 0
         }
-    } else if (direction === 'down')
+    } else if (direction === 'up')
     {
         activeSlideIndex--
         if (activeSlideIndex < 0)
@@ -47,7 +49,7 @@ function changeSlide(direction)
             activeSlideIndex = slidesLength - 1
         }
     }
-    securitySlider.style.transform = `translateY(-${height * activeSlideIndex}px)`;
+    securitySlider.style.transform = `translateY(-${(height * activeSlideIndex)}px)`;
 }
 
 securitySliderNavigationUp.addEventListener('click', () => changeSlide('up'))
