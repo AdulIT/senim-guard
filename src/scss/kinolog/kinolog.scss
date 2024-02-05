@@ -1,0 +1,15 @@
+.kinolog
+{
+    padding: 155px 100px;
+    background: url(/images/dog/dog.png) bottom right / contain no-repeat;
+    &__title
+    {
+        white-space: pre-line;
+    }
+    &__text
+    {
+        margin: 17px 0;
+        white-space: pre-line;
+        color: $second-color;
+    }
+}

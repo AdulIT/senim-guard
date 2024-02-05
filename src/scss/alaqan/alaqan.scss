@@ -1,0 +1,16 @@
+.alaqan
+{
+    padding: 100px;
+    background: url(/images/alaqan/alaqan.png) bottom right / contain no-repeat;
+    background-color: #1D1D1D;
+    &__title
+    {
+        white-space: pre-line;
+    }
+    &__text
+    {
+        margin: 17px 0;
+        white-space: pre-line;
+        color: $second-color;
+    }
+}

@@ -1,0 +1,44 @@
+.footer
+{
+    padding: 52px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo
+    {
+        width: 150px;
+    }
+    &__text
+    {
+        font-size: 1.4rem !important;
+        line-height: 160% !important;
+        width: 351px;
+        flex-shrink: 0;
+    }
+    &__contacts
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &-title
+        {
+            font-size: 1.8rem !important;
+            line-height: 160% !important;
+        }
+        &-contact
+        {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            &_phones
+            {
+                display: flex;
+                flex-direction: column;
+                a
+                {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

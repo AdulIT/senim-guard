@@ -2,12 +2,14 @@
 {
     min-height: 1141px;
     padding: 100px;
-    .grid-contaner
+    .grid-container
     {
         display: grid;
+        padding: 24px;
         grid-template-columns: repeat(3, 320px);
-        grid-template-rows: repeat(3, 362px);
-        grid-auto-rows: 362px;
+        grid-template-rows: repeat(3, 1fr);
+        place-content: center;
+        grid-auto-rows: min(362px);
         gap: 40px;
         &__item
         {
@@ -46,6 +48,10 @@
                 font-size: 3.2rem;
                 font-weight: 500;
                 margin: 30px 0 10px;
+                span
+                {
+                    font-size: 2.4rem;
+                }
             }
             &-text
             {
