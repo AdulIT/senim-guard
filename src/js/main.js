@@ -12,6 +12,25 @@ dropdownIcon.forEach(dropdown => {
     })
 })
 
+// Close dropdown menu when click outside of it
+document.addEventListener('click', (event) =>
+{
+    const isClosest = event.target.closest('.arrow-down');
+
+    if (!isClosest && dropdownMenu.classList.contains("show"))
+    {
+        dropdownMenu.classList.remove("show");
+    }
+})
+
+document.addEventListener('keydown', (event) =>
+{
+    if (event.key === 'Escape' && dropdownMenu.classList.contains("show"))
+    {
+        dropdownMenu.classList.remove("show");
+    }
+})
+
 const elems = document.querySelectorAll('.collapse');
 
 const collapses = []
@@ -19,7 +38,6 @@ elems.forEach((elem) => collapses.push(new ItcCollapse(elem)));
 
 document.addEventListener('click', function(event)
 {
-    console.log(event.target.dataset.collapse);
     if (event.target.dataset.collapse !== undefined) {
         collapses.forEach(collapse => collapse.toggle())
       }
