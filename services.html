@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Услуги</title>
+	<link rel="stylesheet" href="/src/scss/collapse.scss">
 	<link rel="stylesheet" href="/src/scss/style.scss">
 </head>
 <body>
@@ -19,17 +20,15 @@
 					<a href="./index.html" class="menu__link text">
 						Главная
 					</a>
-					<svg class="arrow-down menu__arrow-down" width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M13.125 1.6926L7.5 7.3176L1.875 1.6926" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-					</svg>
+					<img class="arrow-down menu__arrow-down" src="/icons/arrow-down-white.svg" alt="arrow down icon" loading="lazy">
 				</li>
 				<ul class="dropdown gradient-border">
 					<li class="dropdown__item"><a href="#about" class="dropdown__link text">О нас</a></li>
-					<li class="dropdown__item"><a href="#" class="dropdown__link text">Наши клиенты</a></li>
-					<li class="dropdown__item"><a href="#" class="dropdown__link text">Сотрудники</a></li>
+					<li class="dropdown__item"><a href="#clients" class="dropdown__link text">Наши клиенты</a></li>
+					<li class="dropdown__item"><a href="#employee" class="dropdown__link text">Сотрудники</a></li>
 				</ul>
 				<li class="menu__item"><a href="./services.html" class="menu__link text active">Наши услуги</a></li>
-				<li class="menu__item"><a href="#" class="menu__link text">Контакты</a></li>
+				<li class="menu__item"><a href="#contact" class="menu__link text">Контакты</a></li>
 			</ul>
 		</nav>
 		<button class="gradient-border header__btn text">
@@ -164,7 +163,18 @@
 				предоставляется доступ к необходимым ресурсам.
 			</p>
 
-			<span class="about-accordion text">
+			<div class="collapse">
+				<div class="collapse__body alaqan__text text">Мобильное приложение для родителей позволяет отслеживать
+				питание ребенка, его активность в библиотеке, а также
+				фиксирует время прихода и ухода из школы. Эта комплексная
+				система не только повышает эффективность и комфорт, но и
+				обеспечивает высокий уровень безопасности, обеспечивая
+				родителям полный контроль и уверенность в благополучии и
+				образовании своих детей.
+				</div>
+			</div>
+
+			<span class="about-accordion text" data-collapse>
 				Узнать больше
 				<img src="/icons/arrow-down.svg" alt="arrow down icon" loading="lazy">
 			</span>
@@ -184,13 +194,37 @@
 				собак для эффективной службы в различных сценариях.
 			</p>
 
-			<span class="about-accordion text">
+			<div class="collapse">
+				<div class="collapse__body kinolog__text text">Почему выбирают нас:
+					<b>1. Эффективность</b>: Наши команды кинологов и их собак
+					прошли специализированное обучение, гарантируя
+					выдающуюся эффективность в предотвращении и обеспечении
+					безопасности.
+					<b>2. Мобильность</b>: Патруль с собаками обеспечивает
+					быстрый и гибкий отклик на любые потенциальные угрозы.
+					<b>3. Профессионализм</b>: Каждая ситуация рассматривается с
+					индивидуальным подходом, а наши сотрудники всегда готовы к
+					оперативному действию.
+					<b>4. Отпугивающий эффект</b>: Присутствие кинологической
+					охраны сразу же создает мощный отпугивающий эффект,
+					заставляя потенциальных нарушителей переоценить свои
+					намерения.
+					
+					Выберите охрану, в которой сочетаются профессионализм,
+					надежность и непревзойденные навыки наших кинологов и их
+					преданных спутников. Обеспечьте своему объекту
+					максимальную защиту с нашими кинологическими услугами –
+					ваш надежный щит в мире безопасности!"
+				</div>
+			</div>
+
+			<span class="about-accordion text" data-collapse>
 				Узнать больше
 				<img src="/icons/arrow-down.svg" alt="arrow down icon" loading="lazy">
 			</span>
 		</section>
 
-		<section class="contact" id="contactus">
+		<section class="contact" id="contact">
 			<div class="contact__wrapper">
 				<div class="contact__left">
 					<h3 class="title title__64 contact__title">Мы будем рады вам помочь.</h3>
@@ -253,5 +287,7 @@
 			</div>
 		</div>
 	</footer>
+	<script type="module" src="js/collapse.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Senim Guard</title>
+	<link rel="stylesheet" href="/src/scss/collapse.scss">
 	<link rel="stylesheet" href="/src/scss/style.scss">
   </head>
   <body>
@@ -22,11 +23,11 @@
 				</li>
 				<ul class="dropdown gradient-border">
 					<li class="dropdown__item"><a href="#about" class="dropdown__link text">О нас</a></li>
-					<li class="dropdown__item"><a href="#" class="dropdown__link text">Наши клиенты</a></li>
-					<li class="dropdown__item"><a href="#" class="dropdown__link text">Сотрудники</a></li>
+					<li class="dropdown__item"><a href="#clients" class="dropdown__link text">Наши клиенты</a></li>
+					<li class="dropdown__item"><a href="#employee" class="dropdown__link text">Сотрудники</a></li>
 				</ul>
 				<li class="menu__item"><a href="/services.html" class="menu__link text">Наши услуги</a></li>
-				<li class="menu__item"><a href="#" class="menu__link text">Контакты</a></li>
+				<li class="menu__item"><a href="#contact" class="menu__link text">Контакты</a></li>
 			</ul>
 		</nav>
 		<button class="gradient-border header__btn text">
@@ -69,14 +70,23 @@
 
 				Senim Guard - это высококвалифицированный руководящий и испольнительный аппарат. Наши сотрудники - это сплоченная компания профессионалов, которых отличает высокая квалификация, опыт работы в спецслужбах <br> и правоохранительных органах.
 			</p>
+
+			<div class="collapse">
+				<div class="collapse__body about__text text">Инженерно - технический состав нашей компании представлен высококлассными профессионалами своего дела, непрерывно ведущими поиск и внедрение современных технологий, с целью поддержания статуса «Senim Guard» как инновационной компании.
+
+					Жесткий профессиональный отбор на конкурсных условиях, регулярное повышение квалификации, накопленный опыт работы в охранных фирмах и спецструктурах отличает работу наших сотрудников на рынке охранных услуг.
+
+					Наши специалисты всегда готовы дать профессиональные рекомендации и оказать содействие в органицации охраны на Вашем объекте!
+				</div>
+			</div>
 			
-			<span class="about-accordion text">
+			<span class="about-accordion text" data-collapse>
 				Узнать больше
 				<img src="/icons/arrow-down.svg" alt="arrow down icon" loading="lazy">
 			</span>
 		</section>
 
-		<section class="clients">
+		<section class="clients" id="clients">
 			<p class="clients__promo text">SENIM GUARD СЕГОДНЯ И ЗАВТРА</p>
 
 			<h3 class="title title__40 clients__title">Наши клиенты</h3>
@@ -177,7 +187,7 @@
 			</div>
         </section>
 
-		<section class="employee">
+		<section class="employee" id="employee">
 			<h2 class="title title__64 employee__title">Сотрудники</h2>
 
 			<div class="employee__tabcontainer">
@@ -325,7 +335,7 @@
 			</div>
 		</section>
 
-		<section class="contact" id="contactus">
+		<section class="contact" id="contact">
 			<div class="contact__wrapper">
 				<div class="contact__left">
 					<h3 class="title title__64 contact__title">Мы будем рады вам помочь.</h3>
@@ -388,6 +398,8 @@
 			</div>
 		</div>
 	</footer>
+	<script type="module" src="js/collapse.js"></script>
+    <script type="module" src="/src/js/slider.js"></script>
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
