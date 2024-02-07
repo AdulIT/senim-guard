@@ -11,16 +11,16 @@ const securitySlides = document.querySelectorAll('.security-slider__slide')
 const securitySliderNavigationUp = document.querySelector('.slide-up')
 const securitySliderNavigationDown = document.querySelector('.slide-down')
 
-const slidesLength = securitySlides.length
+let isMobile = window.matchMedia("(max-width: 767px)").matches
+
+const slidesLength = isMobile ? securitySlides.length : securitySlides.length / 2
 
 let activeSlideIndex = 0
 
-// console.log(securitySlides[5].clientHeight);
-
 function changeSlide(direction)
 {
-    let height = securitySlides[activeSlideIndex].clientHeight;
-
+    const width = 363;
+    console.log(activeSlideIndex);
     if (direction === 'down')
     {
         activeSlideIndex++
@@ -36,7 +36,7 @@ function changeSlide(direction)
             activeSlideIndex = slidesLength - 1
         }
     }
-    securitySlider.style.transform = `translateY(-${(height * activeSlideIndex)}px)`;
+    securitySlider.style.transform = `translateX(-${(width * activeSlideIndex)}px)`;
 }
 
 securitySliderNavigationUp.addEventListener('click', () => changeSlide('up'))
