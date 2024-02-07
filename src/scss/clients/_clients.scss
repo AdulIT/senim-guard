@@ -83,3 +83,46 @@
         }
     }
 }
+
+@media screen and (max-width: 575px) {
+    .clients
+    {
+        padding: 115px 0;
+        &__promo
+        {
+            font-size: 1.4rem !important;
+            &::before,
+            &::after
+            {
+                width: 20px;
+            }
+            &::before
+            {
+                margin-left: -25px;
+            }
+        }
+        &__title
+        {
+            font-size: 3.2rem !important;
+        }
+        &__slider
+        {
+            &::before,
+            &::after
+            {
+                width: 100px;
+            }
+            &-slide
+            {
+                display: inline-flex;
+                align-items: center;
+                animation: 25s infiniteSlider infinite linear;
+                img
+                {
+                    max-height: 170px;
+                    margin: 0 30px;
+                }
+            }
+        }
+    }
+}

@@ -49,3 +49,30 @@
         padding: 24px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .footer
+    {
+        padding: 52px;
+        flex-direction: column;
+        gap: 67px;
+        &__text
+        {
+            text-align: center;
+        }
+        &__contacts
+        {
+            align-items: center;
+            max-width: fit-content;
+            gap: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 575px)
+{
+    .footer
+    {
+        padding: 52px 24px;
+    }
+}

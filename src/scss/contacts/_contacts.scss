@@ -105,6 +105,10 @@
             text-decoration-line: underline;
         }
     }
+    .mobile-input
+    {
+        display: none;
+    }
 }
 
 
@@ -154,37 +158,90 @@
 
 @media screen and (max-width: 767px)
 {
-    .contact__footer
+    .contact
     {
-        flex-direction: column;
+        padding: 60px 24px;
+        &__title
+        {
+            font-size: 4.4rem !important;
+        }
+        &__text
+        {
+            display: none;
+        }
+        &__form
+        {
+            margin-top: 44px;
+        }
+        &__footer
+        {
+            flex-direction: column;
+            align-items: baseline;
+            &_btn
+            {
+                padding: 13px 20px;
+                font-size: 1.4rem !important;
+                font-weight: 600 !important;
+                line-height: 120% !important;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 575px)
 {
-    .contact__footer
+    .contact
     {
-        gap: 18px;
-    }
-    .contact__footer_btn__mobile
-    {
-        padding: 13px 20px !important;
-        border-radius: 100px !important;
-        font-size: 1.4rem;
-        font-weight: 600;
-        line-height: 120%;
-    }
-    .contact__footer_call
-    {
-        font-size: 1.4rem;
-        font-weight: 400;
-        line-height: 120%;
+        &__wrapper
+        {
+            place-content: normal;
+        }
+        &__title
+        {
+            width: auto;
+        }
+        &__left
+        {
+            max-width: 100%;
+        }
+        &__form
+        {
+            &_wrapper
+            {
+                display: none;
+            }
+            &_input
+            {
+                width: 100%;
+            }
+        }
+        .mobile-input
+        {
+            display: block;
+        }
+        &__footer
+        {
+            gap: 18px;
+            &_call
+            {
+                font-size: 1.4rem !important;
+                line-height: 120% !important;
+            }
+            &_btn__mobile
+            {
+                padding: 13px 20px !important;
+                border-radius: 100px !important;
+                font-size: 1.4rem;
+                font-weight: 600;
+                line-height: 120%;
+            }
+        }
     }
 }
-@media screen and (max-width: 410px)
-{
-    .contact__title
-    {
-        width: 320px;
-    }
-}
+// @media screen and (max-width: 410px)
+// {
+//     .contact__title
+//     {
+//         width: 320px;
+//     }
+// }

@@ -2,6 +2,10 @@
 {
     min-height: 679px;
     padding: 100px;
+    &__title
+    {
+        margin: 0;
+    }
     .wrapper
     {
         min-height: 491px;
@@ -14,6 +18,10 @@
         justify-content: space-between;
         padding: 40px;
         border-radius: 40px;
+        img
+        {
+            display: none;
+        }
     }
     &__advantages
     {
@@ -41,6 +49,55 @@
             background: url(/images/fs.png) center center/cover no-repeat, url(/images/main-senim-logo.svg) center right/40% no-repeat;
             padding: 40px 20px;
             border-radius: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .first-screen
+    {
+        padding: 32px 24px;
+        &__title
+        {
+            font-size: 4rem !important;
+        }
+        .wrapper
+        {
+            background: url(/images/fs.png) center center/cover no-repeat; //, url(/public/images/alaqan/main-sm.png) bottom center/50% no-repeat
+            padding: 34px 29px 0;
+            justify-content: start;
+            gap: 24px;
+            img
+            {
+                display: block;
+            }
+        }
+        &__advantages
+        {
+            flex-wrap: wrap;
+            gap: 25px;
+            width: 265px;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .first-screen
+    {
+        padding: 32px 24px;
+        &__title
+        {
+            font-size: 3rem !important;
+        }
+        &__advantages
+        {
+            flex-wrap: wrap;
+            gap: 25px;
+            width: auto;
+            &-item
+            {
+                font-size: 3.2rem !important;
+            }
         }
     }
 }

@@ -82,3 +82,31 @@
         gap: 50px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .security
+    {
+        padding: 32px 24px;
+        flex-direction: column;
+        gap: 20px;
+        &__header
+        {
+            &-title
+            {
+                font-size: 6.4rem !important;
+                &__up
+                {
+                    font-size: 2.4rem !important;
+                }
+                &__down
+                {
+                    font-size: 1.8rem !important;
+                }
+            }
+        }
+        &__text
+        {
+            display: none;
+        }
+    }
+}

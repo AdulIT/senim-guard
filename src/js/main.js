@@ -36,13 +36,6 @@ const elems = document.querySelectorAll('.collapse');
 const collapses = []
 elems.forEach((elem) => collapses.push(new ItcCollapse(elem)));
 
-document.addEventListener('click', function(event)
-{
-    if (event.target.dataset.collapse !== undefined) {
-        collapses.forEach(collapse => collapse.toggle())
-      }
-})
-
 // Menu Burger
 const hamburger = document.querySelector('.hamburger'),
       closeBtn = document.querySelector('.close'),
@@ -51,11 +44,19 @@ const hamburger = document.querySelector('.hamburger'),
 hamburger.addEventListener('click', () =>
 {
     menu.classList.toggle('menu-active')
-    // closeBtn.classList.add('close-active')
+
+    // if (menu.classList.contains('menu-active'))
+    // {
+    //     if (!event.target.classList.contains('menu'))
+    //     {
+    //         menu.classList.remove('menu-active')
+    //     }
+    // }
 })
 
-// closeBtn.addEventListener('click', () =>
-// {
-//     menu.classList.remove('menu-active')
-//     closeBtn.classList.remove('close-active')
-// })
+document.addEventListener('click', function(event)
+{
+    if (event.target.dataset.collapse !== undefined) {
+        collapses.forEach(collapse => collapse.toggle())
+    }
+})

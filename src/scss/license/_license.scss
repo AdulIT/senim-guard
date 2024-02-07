@@ -35,3 +35,38 @@
         }
     }
 }
+
+@media screen and (max-width: 767px)
+{
+    .license
+    {
+        padding: 32px 24px;
+        &__title
+        {
+            font-size: 4.4rem !important;
+            margin-bottom: 5px !important;
+        }
+        &__subtitle
+        {
+            margin-bottom: 20px;
+        }
+        &__images
+        {
+            gap: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 575px)
+{
+    .license
+    {
+        &__images
+        {
+            &-img
+            {
+                max-width: 300px;
+            }
+        }
+    }
+}
