@@ -42,3 +42,20 @@ document.addEventListener('click', function(event)
         collapses.forEach(collapse => collapse.toggle())
       }
 })
+
+// Menu Burger
+const hamburger = document.querySelector('.hamburger'),
+      closeBtn = document.querySelector('.close'),
+      menu =  document.querySelector('.menu')
+
+hamburger.addEventListener('click', () =>
+{
+    menu.classList.toggle('menu-active')
+    // closeBtn.classList.add('close-active')
+})
+
+// closeBtn.addEventListener('click', () =>
+// {
+//     menu.classList.remove('menu-active')
+//     closeBtn.classList.remove('close-active')
+// })

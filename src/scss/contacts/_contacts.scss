@@ -108,19 +108,23 @@
 }
 
 
-@media screen and (max-width: 1202px)
+@media screen and (max-width: 1199px)
 {
     .contact
     {
-        padding: 100px 0 60px;
+        padding: 100px 60px;
         &__wrapper
         {
             gap: 30px;
         }
+        &__footer
+        {
+            justify-content: start;
+        }
     }
 }
 
-@media screen and (max-width: 992px)
+@media screen and (max-width: 991px)
 {
     .contact__wrapper
     {
@@ -140,24 +144,6 @@
         padding: 64px 0;
         background-color: var(--heading-color);
         color: #fff;
-    }
-    .contact__form
-    {
-        display: none;
-    }
-    .contact__title
-    {
-        width: 350px;
-        font-size: 4.4rem;
-        font-weight: 700;
-        letter-spacing: -1.76px;
-        margin-bottom: 44px;
-    }
-    .contact__text
-    {
-        width: 300px;
-        font-size: 1.8rem;
-        margin-bottom: 0;
     }
 
     .line

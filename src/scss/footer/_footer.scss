@@ -6,19 +6,19 @@
     justify-content: space-between;
     &__logo
     {
-        width: 150px;
+        width: max(150px);
     }
     &__text
     {
         font-size: 1.4rem !important;
         line-height: 160% !important;
-        width: 351px;
-        flex-shrink: 0;
+        max-width: 351px;
     }
     &__contacts
     {
         display: flex;
         flex-direction: column;
+        max-width: 348px;
         gap: 10px;
         &-title
         {
@@ -40,5 +40,12 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .footer
+    {
+        padding: 24px;
     }
 }

@@ -19,3 +19,12 @@
         cursor: pointer;
     }
 }
+
+@media screen and (max-width: 991px) {
+    .about
+    {
+        background: none;
+        padding: 100px;
+        min-height: auto;
+    }
+}

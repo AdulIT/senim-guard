@@ -9,7 +9,7 @@
         grid-template-columns: repeat(3, 320px);
         grid-template-rows: repeat(3, 1fr);
         place-content: center;
-        grid-auto-rows: min(362px);
+        grid-auto-rows: max(362px, 1fr);
         gap: 40px;
         &__item
         {
@@ -58,6 +58,31 @@
                 font-size: 1.6rem;
                 color: $second-color;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .services
+    {
+        .grid-container
+        {
+            grid-template-columns: repeat(2, 320px);
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .services
+    {
+        padding: 100px 50px;
+        &__title
+        {
+            margin-bottom: 60px !important;
+        }
+        .grid-container
+        {
+            grid-template-columns: repeat(2, 320px);
         }
     }
 }

@@ -24,3 +24,14 @@
         }
     }
 }
+
+@media screen and (max-width: 991px) {
+    .license
+    {
+        padding: 100px 50px;
+        &__images
+        {
+            flex-direction: column;
+        }
+    }
+}

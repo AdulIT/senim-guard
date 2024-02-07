@@ -13,3 +13,18 @@
         color: $second-color;
     }
 }
+
+@media screen and (max-width: 1199px) {
+    .kinolog
+    {
+        background-size: 50%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .kinolog
+    {
+        padding: 100px;
+        background: none;
+    }
+}
