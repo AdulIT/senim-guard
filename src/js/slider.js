@@ -46,7 +46,7 @@ securitySliderNavigationDown.addEventListener('click', () => changeSlide('down')
 
 const tabs = document.querySelectorAll('.tabs__btn'),
       tabsContent = document.querySelectorAll('.employee__tabcontent'),
-      tabsParent = document.querySelector('.tabs');
+      tabsParent = document.querySelector('.tabs__header');
 
 function hideTabContent()
 {
