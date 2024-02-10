@@ -13,6 +13,7 @@
 {
     min-height: 512px;
     padding: 100px 0;
+    background: url(/images/clients/noise-sm.png) center center/cover no-repeat;
     &__promo
     {
         position: relative;
@@ -84,6 +85,30 @@
     }
 }
 
+@media screen and (max-width: 767px)
+{
+    .clients
+    {
+        &__title
+        {
+            margin: 10px 0 100px;
+        }
+        background: url(/images/clients/noise-sm.png) center center/cover no-repeat;
+        &__slider
+        {
+            &-slide
+            {
+                img
+                {
+                    max-width: 100px;
+                    max-height: 100px;
+                    margin: 0 15px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 575px) {
     .clients
     {
@@ -110,18 +135,7 @@
             &::before,
             &::after
             {
-                width: 100px;
-            }
-            &-slide
-            {
-                display: inline-flex;
-                align-items: center;
-                animation: 25s infiniteSlider infinite linear;
-                img
-                {
-                    max-height: 170px;
-                    margin: 0 30px;
-                }
+                width: 80px;
             }
         }
     }

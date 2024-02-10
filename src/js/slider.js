@@ -39,8 +39,8 @@ function changeSlide(direction)
     securitySlider.style.transform = `translateX(-${(width * activeSlideIndex)}px)`;
 }
 
-securitySliderNavigationUp.addEventListener('click', () => changeSlide('up'))
-securitySliderNavigationDown.addEventListener('click', () => changeSlide('down'))
+securitySliderNavigationUp.addEventListener('click', () => changeSlide('down'))
+securitySliderNavigationDown.addEventListener('click', () => changeSlide('up'))
 
 // Tabs
 

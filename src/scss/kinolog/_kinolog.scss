@@ -39,3 +39,19 @@
         }
     }
 }
+
+@media screen and (max-width: 575px)
+{
+    .kinolog
+    {
+        &__title
+        {
+            text-align: center;
+        }
+        &__text,
+        .about-accordion
+        {
+            padding: 0 15px;
+        }
+    }
+}

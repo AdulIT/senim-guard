@@ -1,7 +1,7 @@
 .alaqan
 {
     padding: 100px;
-    background: url(/images/alaqan/alaqan.png) bottom right / contain no-repeat;
+    background: url(/images/alaqan/alaqan.png) bottom right / 40% no-repeat;
     background-color: #1D1D1D;
     &__title
     {
@@ -37,6 +37,22 @@
         &__title
         {
             font-size: 3.6rem !important;
+        }
+    }
+}
+
+@media screen and (max-width: 575px)
+{
+    .alaqan
+    {
+        &__title
+        {
+            text-align: center;
+        }
+        &__text,
+        .about-accordion
+        {
+            padding: 0 15px;
         }
     }
 }
