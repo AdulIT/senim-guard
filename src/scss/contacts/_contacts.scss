@@ -1,13 +1,8 @@
 .contact
 {
     padding: 100px 100px;
-    background: url(/images/services/overlay.png) center center/cover no-repeat;
-    &__wrapper
-    {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+    background: url(/images/services/overlay.png) center center/cover no-repeat,
+                url(/images/call/senim-group.png) 80% 50%/25% 45% no-repeat;
     &__title
     {
         line-height: 120% !important;
@@ -20,10 +15,6 @@
         font-size: 2.4rem !important;
         color: $second-color;
         line-height: 140% !important;
-    }
-    &__left
-    {
-        max-width: 509px;
     }
     &__form
     {
@@ -116,6 +107,8 @@
 {
     .contact
     {
+        background: url(/images/services/overlay.png) center center/cover no-repeat,
+                    url(/images/call/senim-group.png) 90% 50%/30% 45% no-repeat;
         padding: 100px;
         &__wrapper
         {
@@ -130,29 +123,27 @@
 
 @media screen and (max-width: 991px)
 {
-    .contact__wrapper
-    {
-        place-content: center;
-    }
-    .contact__img
-    {
-        display: none;
-    }
-    .contact__footer
-    {
-        align-items: center;
-        justify-content: center;
-    }
     .contact
     {
-        padding: 64px 0;
-        background-color: var(--heading-color);
-        color: #fff;
-    }
-
-    .line
-    {
-        margin: 64px 0 44px;
+        padding: 100px 50px;
+        background: url(/images/services/overlay.png) center center/cover no-repeat;
+        &__wrapper
+        {
+            place-content: center;
+        }
+        &__img
+        {
+            display: none;
+        }
+        &__footer
+        {
+            align-items: center;
+            justify-content: center;
+        }
+        .line
+        {
+            margin: 64px 0 44px;
+        }
     }
 }
 
@@ -176,7 +167,6 @@
         &__footer
         {
             flex-direction: column;
-            align-items: baseline;
             &_btn
             {
                 padding: 13px 20px;
@@ -222,6 +212,7 @@
         &__footer
         {
             gap: 18px;
+            align-items: baseline;
             &_call
             {
                 font-size: 1.4rem !important;
@@ -238,10 +229,3 @@
         }
     }
 }
-// @media screen and (max-width: 410px)
-// {
-//     .contact__title
-//     {
-//         width: 320px;
-//     }
-// }

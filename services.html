@@ -307,34 +307,41 @@
 		<section class="contact" id="contact">
 			<div class="contact__wrapper">
 				<div class="contact__left">
-					<h3 class="title title__64 contact__title">Мы будем рады вам помочь.</h3>
+					<h3 class="title title__64 contact__title">Мы будем рады <br> вам помочь.</h3>
 					<p class="text contact__text">
-						Оставьте заявку и наши операторы с вами свяжутся.
+						Оставьте заявку и наши операторы с вами <br> свяжутся.
 					</p>
 
-					<form action="#" class="contact__form">
+					<form action="/services.html" class="contact__form">
 						<div class="contact__form_wrapper">
 							<input class="contact__form_input" type="text" id="name" name="name" placeholder="Имя" />
 							<input class="contact__form_input" type="tel" id="tel" name="tel" placeholder="Номер телефона" />
 						</div>
-						<input class="contact__form_input mobile-input" type="text" id="name" name="name" placeholder="Имя" />
-						<input class="contact__form_input mobile-input" type="tel" id="tel" name="tel" placeholder="Номер телефона" />
-						<input class="contact__form_input" type="email" id="email" name="email" placeholder="Ваш Email" />
+						<input class="contact__form_input mobile-input" type="text" id="nameMobile" name="nameMobile" placeholder="Имя"/>
+						<input class="contact__form_input mobile-input" type="tel" id="telMobile" name="telMobile" placeholder="Номер телефона"/>
+						<input 
+							class="contact__form_input"
+							type="email"
+							id="email"
+							name="email"
+							placeholder="Ваш Email"
+							required
+						/>
 						<textarea class="contact__form_input" id="message" name="message" placeholder="Введите сообщение (не обязательно)"></textarea>
+
+						<div class="contact__line"></div>
+
+						<div class="contact__footer">
+							<button type="submit" class="text contact__footer_btn">Оставить заявку</button>
+							<span class="text contact__footer_call">
+								Или позвоните 
+								<a href="tel:+77017860800" class="text contact__footer_call">
+									+7 701 786 08 00
+								</a>
+							</span>
+						</div>
 					</form>
 				</div>
-
-				<img class="contact__img" src="/images/call/senim-group.png" alt="contact-img" loading='lazy' />
-			</div>
-
-			<div class="contact__line"></div>
-
-			<div class="contact__footer">
-				<button type="submit" class="text contact__footer_btn">Оставить заявку</button>
-				<span class="text contact__footer_call">
-					Или позвоните 
-					<a href="tel:+77017860800" class="text contact__footer_call"> +7 701 786 08 00 </a>
-				</span>
 			</div>
         </section>
 	</main>
@@ -369,6 +376,8 @@
 			</div>
 		</div>
 	</footer>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script type="module" src="/src/js/form.js"></script>
 	<script type="module" src="/src/js/collapse.js"></script>
 	<script type="module" src="/src/js/tabs.js"></script>
     <script type="module" src="/src/js/main.js"></script>

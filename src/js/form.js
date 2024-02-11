@@ -5,11 +5,18 @@ const form = document.querySelector('.contact__form'),
       nameInput = isMobile ? form.querySelector('#nameMobile') : form.querySelector('#name'),
       phoneInput = isMobile ? form.querySelector('#telMobile') : form.querySelector('#tel'),
       emailInput = form.querySelector('#email'),
-      messageInput = form.querySelector('#message');
+      messageInput = form.querySelector('#message'),
+      textarea = form.querySelector('textarea');
 
-submitBtn.addEventListener('click', function(event)
+const message = 'Ваша заявка принята! В ближайшее время с вами свяжется наш менеджер!'
+const p = document.createElement('p');
+p.innerHTML = message;
+
+nameInput.setAttribute('required', '');
+phoneInput.setAttribute('required', '');
+
+form.addEventListener('submit', function(event)
 {
-    form.submit()
     event.preventDefault()
 
     let body = `
@@ -26,10 +33,18 @@ submitBtn.addEventListener('click', function(event)
         Subject : "Новая заявка",
         Body : body,
     })
+    textarea.insertAdjacentElement('afterend', p)
+    resetInputs()
+    setTimeout(() =>
+    {
+        p.remove()
+    }, 10000)
 });
 
-function validation(form)
+function resetInputs()
 {
-    let result = true;
-    console.log(form);
+    nameInput.value = '';
+    phoneInput.value = '';
+    emailInput.value = '';
+    messageInput.value = '';
 }

@@ -259,27 +259,6 @@
 				<div class="employee__tabcontent">
 					<div class="employee__equipment">
 						<div class="employee__equipment_item gradient-border">
-							<div class="employee__equipment_item-descr text">
-								<h3 class="title employee__equipment_item-descr__title">Брендированная форма</h3>
-								<p class="text employee__equipment_item-descr__text">
-									Форма, разработанная в фирменном стиле вашей компании.
-								</p>
-							</div>
-							<div class="employee__equipment_item-descr text">
-								<h3 class="title employee__equipment_item-descr__title">Форма охранника</h3>
-								<p class="text employee__equipment_item-descr__text">
-									Прочная удобная и не маркая. Идеально подходит для ежедневной охраны вашего объекта.
-								</p>
-							</div>
-							<div class="employee__equipment_item-descr text">
-								<h3 class="title employee__equipment_item-descr__title">Деловой костюм</h3>
-								<p class="text employee__equipment_item-descr__text">
-									Подходит для охраны официальных мероприятий. Также позволяет охраннику стать незамеченным.
-								</p>
-							</div>
-						</div>
-
-						<div class="employee__equipment_item gradient-border">
 							<h3 class="title employee__equipment_item-title">Средства вооружения</h3>
 							<p class="text employee__equipment_item-text">
 								Охрана вооружена длинноствольным, короткоствольным и электрическим оружием, и специальными средствами защиты и обороны.
@@ -325,11 +304,15 @@
 
 
 			<div class="tabs tabs__header">
-				<a href="#employee"><button class="tabs__btn gradient-border tabs__btn-active">
-					Отбор
-				</button></a>
-				<a href="#employee"><button class="tabs__btn gradient-border">Оснащение</button></a>
-				<a href="#employee"><button class="tabs__btn gradient-border">Подготовка</button></a>
+				<a href="#employee" class="tabs__link">
+					<button class="tabs__btn gradient-border tabs__btn-active">Отбор</button>
+				</a>
+				<a href="#employee" class="tabs__link">
+					<button class="tabs__btn gradient-border">Оснащение</button>
+				</a>
+				<a href="#employee" class="tabs__link">
+					<button class="tabs__btn gradient-border">Подготовка</button>
+				</a>
 			</div>
 		</section>
 
@@ -350,27 +333,46 @@
 		<section class="contact" id="contact">
 			<div class="contact__wrapper">
 				<div class="contact__left">
-					<h3 class="title title__64 contact__title">Мы будем рады вам помочь.</h3>
+					<h3 class="title title__64 contact__title">Мы будем рады <br> вам помочь.</h3>
 					<p class="text contact__text">
-						Оставьте заявку и наши операторы с вами свяжутся.
+						Оставьте заявку и наши операторы с вами <br> свяжутся.
 					</p>
 
-					<form action="#" class="contact__form">
+					<form action="/" class="contact__form">
 						<div class="contact__form_wrapper">
 							<input class="contact__form_input" type="text" id="name" name="name" placeholder="Имя" />
 							<input class="contact__form_input" type="tel" id="tel" name="tel" placeholder="Номер телефона" />
 						</div>
 						<input class="contact__form_input mobile-input" type="text" id="nameMobile" name="name" placeholder="Имя" />
 						<input class="contact__form_input mobile-input" type="tel" id="telMobile" name="tel" placeholder="Номер телефона" />
-						<input class="contact__form_input" type="email" id="email" name="email" placeholder="Ваш Email" />
+						<input 
+							class="contact__form_input"
+							type="email"
+							id="email"
+							name="email"
+							placeholder="Ваш Email"
+							required
+						/>
 						<textarea class="contact__form_input" id="message" name="message" placeholder="Введите сообщение (не обязательно)"></textarea>
+
+						<div class="contact__line"></div>
+
+						<div class="contact__footer">
+							<button type="submit" class="text contact__footer_btn">Оставить заявку</button>
+							<span class="text contact__footer_call">
+								Или позвоните 
+								<a href="tel:+77017860800" class="text contact__footer_call">
+									+7 701 786 08 00
+								</a>
+							</span>
+						</div>
 					</form>
 				</div>
 
-				<img class="contact__img" src="/images/call/senim-group.png" alt="contact-img" loading='lazy' />
+				<!-- <img class="contact__img" src="/images/call/senim-group.png" alt="contact-img" loading='lazy' /> -->
 			</div>
 
-			<div class="contact__line"></div>
+			<!-- <div class="contact__line"></div>
 
 			<div class="contact__footer">
 				<button type="submit" class="text contact__footer_btn">Оставить заявку</button>
@@ -378,7 +380,7 @@
 					Или позвоните 
 					<a href="tel:+77017860800" class="text contact__footer_call"> +7 701 786 08 00 </a>
 				</span>
-			</div>
+			</div> -->
         </section>
 	</main>
 

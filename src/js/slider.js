@@ -20,7 +20,6 @@ let activeSlideIndex = 0
 function changeSlide(direction)
 {
     const width = 363;
-    console.log(activeSlideIndex);
     if (direction === 'down')
     {
         activeSlideIndex++
