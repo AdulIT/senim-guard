@@ -38,25 +38,34 @@ elems.forEach((elem) => collapses.push(new ItcCollapse(elem)));
 
 // Menu Burger
 const hamburger = document.querySelector('.hamburger'),
-      closeBtn = document.querySelector('.close'),
       menu =  document.querySelector('.menu')
 
 hamburger.addEventListener('click', () =>
 {
     menu.classList.toggle('menu-active')
+    document.body.classList.toggle('lock-scroll');
 
     // if (menu.classList.contains('menu-active'))
     // {
-    //     if (!event.target.classList.contains('menu'))
-    //     {
-    //         menu.classList.remove('menu-active')
-    //     }
+    //     // if (!event.target.classList.contains('menu'))
+    //     // {
+    //     //     menu.classList.remove('menu-active')
+    //     // }
+    //     menu.style.overflow = 'hidden'
     // }
 })
 
+if (menu.classList.contains('menu-active'))
+{
+    menu.style.overflow = 'hidden'
+}
+
 document.addEventListener('click', function(event)
 {
-    if (event.target.dataset.collapse !== undefined) {
-        collapses.forEach(collapse => collapse.toggle())
+    if (event.target.dataset.collapse1 !== undefined) {
+        collapses[0].toggle()
+    }
+    if (event.target.dataset.collapse2 !== undefined) {
+        collapses[1].toggle()
     }
 })
