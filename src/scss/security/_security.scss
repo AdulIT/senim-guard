@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     background: #1D1D1D;
+    flex-wrap: wrap;
     &__header
     {
         display: flex;
@@ -28,15 +29,16 @@
     {
         width: max(572px);
         font-size: 2.4rem !important;
+        margin-bottom: 50px;
     }
     &-slider
     {
-        max-width: 363px;
-        max-height: 711px;
+        width: 363px;
+        max-height: 770px;
         // min-height: 561px;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 50px;
         overflow: hidden;
         &__wrapper
         {
@@ -86,6 +88,10 @@
     {
         flex-direction: column;
         gap: 50px;
+        &__text
+        {
+            margin-bottom: 0;
+        }
     }
 }
 
