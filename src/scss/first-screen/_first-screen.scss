@@ -9,7 +9,7 @@
     .wrapper
     {
         margin: 0 auto;
-        max-width: 1040px;
+        // max-width: 1040px;
         min-height: 491px;
         background: url(/images/fs.png) center center/cover no-repeat, url(/images/main-senim-logo.svg) top right/contain no-repeat;
         background-color: #111111;
@@ -25,7 +25,12 @@
     }
     &__advantages
     {
-        width: max(506px);
+        // width: max(506px);
+        width: max-content;
+        &.base-flex
+        {
+            gap: 25px;
+        }
         &-item,
         &-item__text
         {
@@ -36,6 +41,40 @@
         &-item__text
         {
             font-size: 1.6rem;
+        }
+    }
+    .width-2k
+    {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1600px)
+{
+    .first-screen
+    {
+        &__title
+        {
+            font-size: 6.4rem !important;
+            margin-bottom: 73px;
+        }
+        .width-2k
+        {
+            display: flex;
+            margin-bottom: 50px;
+        }
+        .wrapper {
+            max-width: 1540px;
+            min-height: 585px;
+            justify-content: start;
+            padding: 60px;
+        }
+        &__advantages
+        {
+            &.base-flex
+            {
+                gap: 35px;
+            }
         }
     }
 }
