@@ -1,8 +1,8 @@
 .contact
 {
-    padding: 100px 100px;
-    background: url(/images/services/overlay.png) center center/cover no-repeat,
-                url(/images/call/senim-group.png) 80% 50%/30% 45% no-repeat;
+    position: relative;
+    padding: 100px;
+    background: url(/images/services/overlay.png) center center/cover no-repeat;
     &__title
     {
         line-height: 120% !important;
@@ -64,7 +64,10 @@
     }
     &__img
     {
-        flex-shrink: 1;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10%;
     }
     &__line
     {
@@ -108,9 +111,6 @@
 {
     .contact
     {
-        background: url(/images/services/overlay.png) center center/cover no-repeat,
-                    url(/images/call/senim-group.png) 90% 50%/30% 35% no-repeat;
-        padding: 100px;
         &__wrapper
         {
             gap: 30px;
@@ -118,6 +118,21 @@
         &__footer
         {
             justify-content: start;
+        }
+        &__img
+        {
+            width: 30%;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px)
+{
+    .contact
+    {
+        &__img
+        {
+            display: none;
         }
     }
 }
@@ -127,7 +142,6 @@
     .contact
     {
         padding: 100px 50px;
-        background: url(/images/services/overlay.png) center center/cover no-repeat;
         &__wrapper
         {
             place-content: center;

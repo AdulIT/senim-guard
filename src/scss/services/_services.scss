@@ -2,6 +2,7 @@
 {
     min-height: 1141px;
     padding: 100px;
+    background: url(/images/services/overlay.png) center center/contain no-repeat;
     .grid-container
     {
         display: grid;
@@ -13,7 +14,8 @@
         gap: 40px;
         &__item
         {
-            background: url(/public/images/clients/noise.png) center center/cover no-repeat;
+            background-color: rgb(255 255 255 / 5%);
+            mix-blend-mode: lighten;
             &.gradient-border
             {
                 padding: 24px;
@@ -22,6 +24,7 @@
                 &::before
                 {
                     margin: -3px;
+                    background-color: rgb(255 255 255 / 2%);
                 }
             }
             &-header

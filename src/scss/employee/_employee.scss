@@ -134,7 +134,11 @@
         &__btn
         {
             padding: 15px 30px 17px;
-            &-active
+            &.gradient-border
+            {
+                background: #111111;
+            }
+            &-active.gradient-border
             {
                 background: #2C2C2C;
             }

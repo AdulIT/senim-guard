@@ -32,6 +32,7 @@ document.addEventListener('keydown', (event) =>
 })
 
 const elems = document.querySelectorAll('.collapse');
+const arrowIcons = document.querySelectorAll('.arrow-icon')
 
 const collapses = []
 elems.forEach((elem) => collapses.push(new ItcCollapse(elem)));
@@ -44,15 +45,6 @@ hamburger.addEventListener('click', () =>
 {
     menu.classList.toggle('menu-active')
     document.body.classList.toggle('lock-scroll');
-
-    // if (menu.classList.contains('menu-active'))
-    // {
-    //     // if (!event.target.classList.contains('menu'))
-    //     // {
-    //     //     menu.classList.remove('menu-active')
-    //     // }
-    //     menu.style.overflow = 'hidden'
-    // }
 })
 
 if (menu.classList.contains('menu-active'))
@@ -64,8 +56,10 @@ document.addEventListener('click', function(event)
 {
     if (event.target.dataset.collapse1 !== undefined) {
         collapses[0].toggle()
+        arrowIcons[0].classList.toggle('rotate')
     }
     if (event.target.dataset.collapse2 !== undefined) {
         collapses[1].toggle()
+        arrowIcons[1].classList.toggle('rotate')
     }
 })
