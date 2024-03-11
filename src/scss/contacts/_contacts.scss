@@ -107,6 +107,17 @@
     }
 }
 
+@media screen and (min-width: 1600px)
+{
+    .contact
+    {
+        .container
+        {
+            position: relative;
+        }
+    }    
+}
+
 @media screen and (max-width: 1199px)
 {
     .contact

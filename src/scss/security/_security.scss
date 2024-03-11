@@ -80,6 +80,25 @@
                 transform: rotate(-90deg);
             }
         }
+        .container
+        {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media screen and (min-width: 1600px)
+{
+    .security
+    {
+        .container
+        {
+            width: 1540px;
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
 
